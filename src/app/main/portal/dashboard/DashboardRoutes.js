@@ -3,7 +3,7 @@ import { authRoles } from "../../../auth/authRoles";
 
 const dashboardRoutes = [
   {
-    path: "/dashboard/analytics",
+    path: "/dashboard/analytics/admin",
     component: React.lazy(() => import("./Analytics")),
     auth: authRoles.admin
   }

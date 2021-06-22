@@ -1,8 +1,8 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
-import dashboardRoutes from "./main/portal/dashboard/DashboardRoutes";
-import sessionRoutes from "./main/portal/sessions/SessionRoutes";
-import formsRoutes from "./main/portal/forms/FormsRoutes";
+import dashboardRoutes from "./main/admin/dashboard/DashboardRoutes";
+import sessionRoutes from "./main/admin/sessions/SessionRoutes";
+import formsRoutes from "./main/admin/forms/FormsRoutes";
 
 
 
