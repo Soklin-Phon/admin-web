@@ -79,7 +79,7 @@ class Dashboard1 extends Component {
                   }}
                 ></ModifiedAreaChart>
             </div>
-
+            <br />
             <Card className="px-6 py-4 mb-6 p-sm-24 ">
                 <div className="card-title">Traffic Sources</div>
                 <div className="card-subtitle">Last 30 days</div>
