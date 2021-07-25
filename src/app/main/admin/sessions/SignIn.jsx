@@ -29,21 +29,33 @@ const styles = theme => ({
   }
 });
 
+
+// const loginUser = async values => {
+//   const res = await fetch({ url:'http://localhost:8000/api', method: "POST", body: values });
+//   const data = await res.json();
+//   return data;
+// };
+
 class SignIn extends Component {
+
   state = {
-    email: "phonsoklin670@gmail.com",
-    password: "testpass",
-    agreement: ""
+    email: 'khouch.koeun@gmail.com',
+    password: '123456',
+    agreement: ''
   };
+  
+
   handleChange = event => {
     event.persist();
     this.setState({
       [event.target.name]: event.target.value
     });
   };
+
   handleFormSubmit = event => {
     this.props.loginWithEmailAndPassword({ ...this.state });
   };
+
   render() {
     let { email, password } = this.state;
     let { classes } = this.props;
@@ -93,6 +105,7 @@ class SignIn extends Component {
                           color="primarys"
                           disabled={this.props.login.loading}
                           type="submit"
+                          
                         >
                           Sign in
                         </Button>
